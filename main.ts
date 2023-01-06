@@ -1,6 +1,5 @@
 let numero = 0
 input.onButtonPressed(Button.A, function () {
-    numero = 0
     while (numero < 11) {
         for (let index = 0; index < 2; index++) {
             basic.showString("" + (numero))
@@ -11,6 +10,7 @@ input.onButtonPressed(Button.A, function () {
             basic.clearScreen()
         }
     }
+    numero = 0
 })
 input.onButtonPressed(Button.B, function () {
     numero = 10
@@ -24,10 +24,4 @@ input.onButtonPressed(Button.B, function () {
             basic.clearScreen()
         }
     }
-})
-basic.forever(function () {
-	
-})
-basic.forever(function () {
-	
 })
